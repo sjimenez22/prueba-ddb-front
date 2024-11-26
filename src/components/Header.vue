@@ -52,7 +52,7 @@ onMounted(() => {
                   <router-link to="/tasks" class="nav-link">Tareas</router-link>
                </li>
 
-               <li v-else class="nav-item">
+               <li>
                   <router-link to="/my-tasks" class="nav-link">Mis Tareas</router-link>
                </li>
 
