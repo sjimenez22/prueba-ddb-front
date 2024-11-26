@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Libraries
+
+- npm install js-cookie
+- npm i vue-router
+- npm install date-fns
+- npm i jwt-decode
