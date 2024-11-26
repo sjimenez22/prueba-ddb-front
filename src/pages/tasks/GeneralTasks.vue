@@ -118,7 +118,7 @@ onMounted(() => {
                         <th scope="col">Usuario responsable</th>
                         <th scope="col">Usuario creador</th>
                         <th scope="col">Fecha de creación</th>
-                        <th scope="col" v-if="userSession.role?.pk_role === 1">Editar</th>
+                        <th scope="col">Editar</th>
                         <th scope="col" v-if="userSession.role?.pk_role === 1">Eliminar</th>
                      </tr>
                   </thead>
@@ -133,7 +133,7 @@ onMounted(() => {
                         </td>
                         <td>{{ task.user_creator?.c_name }} <br> <small>{{ task.user_creator?.c_email }}</small></td>
                         <td>{{ formatDate(task.created_at ?? '') }}</td>
-                        <td v-if="userSession.role?.pk_role === 1">
+                        <td>
                            <EditGeneralTask :id-task="task.pk_task" :status-tasks="statusTasks" :users="users"
                               :user="userSession" :projects="projects" @reload-data="reloadData" />
                         </td>
